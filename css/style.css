@@ -1,5 +1,3 @@
-@font-face { font-family: "social"; src: url(../fonts/social.ttf) format("truetype"); }
-
 @font-face { font-family: "bubble"; src: url(../fonts/bubble.ttf) format("truetype"); }
 
 @font-face { font-family: "round light"; src: url(../fonts/round-light.ttf) format("truetype"); }
@@ -27,7 +25,7 @@ h5{}
 
 .page{  /* MAIN PAGE ELEMENT CLASS */
   height: 100vh;
-  min-height: 600px;
+  min-height: 800px;
   width: 100%;
   background: #fff;
   background-size: cover;
@@ -49,22 +47,32 @@ h5{}
       font-family: round bold;
       box-sizing: border-box;
       padding-top: 15px;
+      text-align: left;
+      font-size: 12px;
     }
-      .bottom-nav li{
-        display: inline-block;
-        list-style: none;
-        padding: 0px 20px;
-      }
-      .bottom-nav a:link, a:active, a:visited{
+    #nvd{
+      float: left;
+      height: 70px;
+      box-sizing: border-box;
+      padding-left: 2vw;
+      padding-top: 5px;
+      font-size: 12px;
+    }
+      #nvd a:link, a:active, a:hover{
         text-decoration: none;
         color: #fff;
-        font-size: 20px;
-        text-transform: uppercase;
-        margin-top: 10px;
       }
-      .bottom-nav a:hover{
+      #nvd a:hover{
         color: #ccc;
       }
+    #social{
+      float: right;
+      height: 70px;
+      box-sizing: border-box;
+      padding: 0px 2vw;
+      font-size: 12px;
+    }
+
 
     .main-menu{
       height: 4.5em;
@@ -259,7 +267,7 @@ START OF PAGE CONTENT!
   overflow: scroll;
 }
   .photo-container{
-    height: 100%;
+    height: 900px;
     width: 1000px;
     background-color: #222;
     margin: 0px auto;
@@ -330,6 +338,17 @@ START OF PAGE CONTENT!
       width: 400px;
       border: 0px;
     }
+
+@media screen and (max-width: 768px) {
+      #mobile-menu{
+        visibility: none;
+      }
+}
+@media screen and (min-width: 768px) {
+      #mobile-menu{
+        visibility: visible;
+      }
+}
 
 
 
